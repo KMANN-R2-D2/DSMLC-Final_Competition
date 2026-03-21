@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: windguard-dashboard
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /dashboard.html
