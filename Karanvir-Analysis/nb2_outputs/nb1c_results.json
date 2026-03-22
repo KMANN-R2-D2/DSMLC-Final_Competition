@@ -1,0 +1,520 @@
+{
+  "notebook": "1c",
+  "title": "Gearbox: Explainability & Maintenance Reduction",
+  "shap_xgb": [
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 1,
+      "feature": "sensor_41_avg_zscore",
+      "feature_short": "sensor 41_zscore",
+      "shap_value": 0.684599
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 2,
+      "feature": "sensor_41_avg",
+      "feature_short": "sensor 41",
+      "shap_value": 0.416716
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 3,
+      "feature": "sensor_41_avg_roll_mean_24h",
+      "feature_short": "sensor 41_roll_mean_24h",
+      "shap_value": 0.182884
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 4,
+      "feature": "sensor_14_avg_roll_mean_24h",
+      "feature_short": "sensor 14_roll_mean_24h",
+      "shap_value": 0.154578
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 5,
+      "feature": "sensor_13_avg_roll_mean_24h",
+      "feature_short": "sensor 13_roll_mean_24h",
+      "shap_value": 0.153733
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 6,
+      "feature": "sensor_52_avg_zscore",
+      "feature_short": "sensor 52_zscore",
+      "shap_value": 0.150307
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 7,
+      "feature": "sensor_41_avg_roll_mean_6h",
+      "feature_short": "sensor 41_roll_mean_6h",
+      "shap_value": 0.121507
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 8,
+      "feature": "sensor_12_avg_zscore",
+      "feature_short": "sensor 12_zscore",
+      "shap_value": 0.103305
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 9,
+      "feature": "sensor_12_avg_roll_mean_24h",
+      "feature_short": "sensor 12_roll_mean_24h",
+      "shap_value": 0.076702
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "XGBoost",
+      "rank": 10,
+      "feature": "sensor_11_avg_zscore",
+      "feature_short": "sensor 11_zscore",
+      "shap_value": 0.072197
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 1,
+      "feature": "sensor_19_avg_zscore",
+      "feature_short": "sensor 19_zscore",
+      "shap_value": 0.237422
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 2,
+      "feature": "sensor_20_avg_zscore",
+      "feature_short": "sensor 20_zscore",
+      "shap_value": 0.193978
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 3,
+      "feature": "sensor_34_avg_roll_mean_24h",
+      "feature_short": "sensor 34_roll_mean_24h",
+      "shap_value": 0.180631
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 4,
+      "feature": "sensor_37_avg_roll_mean_24h",
+      "feature_short": "sensor 37_roll_mean_24h",
+      "shap_value": 0.166932
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 5,
+      "feature": "sensor_32_avg_zscore",
+      "feature_short": "sensor 32_zscore",
+      "shap_value": 0.163901
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 6,
+      "feature": "sensor_34_avg_roll_mean_6h",
+      "feature_short": "sensor 34_roll_mean_6h",
+      "shap_value": 0.155119
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 7,
+      "feature": "sensor_20_avg",
+      "feature_short": "sensor 20",
+      "shap_value": 0.151124
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 8,
+      "feature": "sensor_33_avg_roll_mean_24h",
+      "feature_short": "sensor 33_roll_mean_24h",
+      "shap_value": 0.148099
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 9,
+      "feature": "sensor_32_avg_roll_mean_24h",
+      "feature_short": "sensor 32_roll_mean_24h",
+      "shap_value": 0.147594
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "XGBoost",
+      "rank": 10,
+      "feature": "sensor_39_avg_roll_mean_24h",
+      "feature_short": "sensor 39_roll_mean_24h",
+      "shap_value": 0.14441
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 1,
+      "feature": "sensor_187_avg_roll_mean_24h",
+      "feature_short": "sensor 187_roll_mean_24h",
+      "shap_value": 0.279315
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 2,
+      "feature": "sensor_189_avg_zscore",
+      "feature_short": "sensor 189_zscore",
+      "shap_value": 0.245808
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 3,
+      "feature": "sensor_144_avg",
+      "feature_short": "sensor 144",
+      "shap_value": 0.216436
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 4,
+      "feature": "sensor_144_avg_zscore",
+      "feature_short": "sensor 144_zscore",
+      "shap_value": 0.21484
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 5,
+      "feature": "sensor_190_avg_zscore",
+      "feature_short": "sensor 190_zscore",
+      "shap_value": 0.191174
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 6,
+      "feature": "sensor_187_avg_zscore",
+      "feature_short": "sensor 187_zscore",
+      "shap_value": 0.128468
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 7,
+      "feature": "sensor_195_avg_roll_mean_24h",
+      "feature_short": "sensor 195_roll_mean_24h",
+      "shap_value": 0.123894
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 8,
+      "feature": "sensor_190_avg",
+      "feature_short": "sensor 190",
+      "shap_value": 0.122528
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 9,
+      "feature": "sensor_194_avg_zscore",
+      "feature_short": "sensor 194_zscore",
+      "shap_value": 0.116508
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "XGBoost",
+      "rank": 10,
+      "feature": "sensor_186_avg_roll_mean_24h",
+      "feature_short": "sensor 186_roll_mean_24h",
+      "shap_value": 0.102683
+    }
+  ],
+  "shap_gb": [
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 1,
+      "feature": "sensor_41_avg_zscore",
+      "feature_short": "sensor 41_zscore",
+      "shap_value": 0.665687
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 2,
+      "feature": "sensor_41_avg",
+      "feature_short": "sensor 41",
+      "shap_value": 0.379362
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 3,
+      "feature": "sensor_14_avg_roll_mean_24h",
+      "feature_short": "sensor 14_roll_mean_24h",
+      "shap_value": 0.14277
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 4,
+      "feature": "sensor_41_avg_roll_mean_24h",
+      "feature_short": "sensor 41_roll_mean_24h",
+      "shap_value": 0.115244
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 5,
+      "feature": "sensor_13_avg_roll_mean_24h",
+      "feature_short": "sensor 13_roll_mean_24h",
+      "shap_value": 0.105671
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 6,
+      "feature": "sensor_52_avg_zscore",
+      "feature_short": "sensor 52_zscore",
+      "shap_value": 0.104783
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 7,
+      "feature": "sensor_14_avg",
+      "feature_short": "sensor 14",
+      "shap_value": 0.064431
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 8,
+      "feature": "sensor_11_avg_roll_mean_24h",
+      "feature_short": "sensor 11_roll_mean_24h",
+      "shap_value": 0.057602
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 9,
+      "feature": "sensor_12_avg_roll_mean_24h",
+      "feature_short": "sensor 12_roll_mean_24h",
+      "shap_value": 0.051789
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "GradientBoosting",
+      "rank": 10,
+      "feature": "sensor_14_avg_zscore",
+      "feature_short": "sensor 14_zscore",
+      "shap_value": 0.042423
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 1,
+      "feature": "sensor_19_avg_zscore",
+      "feature_short": "sensor 19_zscore",
+      "shap_value": 0.264115
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 2,
+      "feature": "sensor_34_avg_roll_mean_24h",
+      "feature_short": "sensor 34_roll_mean_24h",
+      "shap_value": 0.186556
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 3,
+      "feature": "sensor_34_avg_roll_mean_6h",
+      "feature_short": "sensor 34_roll_mean_6h",
+      "shap_value": 0.157467
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 4,
+      "feature": "sensor_20_avg_zscore",
+      "feature_short": "sensor 20_zscore",
+      "shap_value": 0.137723
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 5,
+      "feature": "sensor_32_avg_zscore",
+      "feature_short": "sensor 32_zscore",
+      "shap_value": 0.128451
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 6,
+      "feature": "sensor_32_avg",
+      "feature_short": "sensor 32",
+      "shap_value": 0.108905
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 7,
+      "feature": "sensor_39_avg_roll_mean_6h",
+      "feature_short": "sensor 39_roll_mean_6h",
+      "shap_value": 0.101884
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 8,
+      "feature": "sensor_39_avg_roll_mean_24h",
+      "feature_short": "sensor 39_roll_mean_24h",
+      "shap_value": 0.098513
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 9,
+      "feature": "sensor_38_avg_roll_mean_24h",
+      "feature_short": "sensor 38_roll_mean_24h",
+      "shap_value": 0.094859
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "GradientBoosting",
+      "rank": 10,
+      "feature": "sensor_37_avg_roll_mean_24h",
+      "feature_short": "sensor 37_roll_mean_24h",
+      "shap_value": 0.09211
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 1,
+      "feature": "sensor_187_avg_roll_mean_24h",
+      "feature_short": "sensor 187_roll_mean_24h",
+      "shap_value": 0.307743
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 2,
+      "feature": "sensor_189_avg_zscore",
+      "feature_short": "sensor 189_zscore",
+      "shap_value": 0.228574
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 3,
+      "feature": "sensor_190_avg_zscore",
+      "feature_short": "sensor 190_zscore",
+      "shap_value": 0.171415
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 4,
+      "feature": "sensor_144_avg",
+      "feature_short": "sensor 144",
+      "shap_value": 0.12138
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 5,
+      "feature": "sensor_144_avg_zscore",
+      "feature_short": "sensor 144_zscore",
+      "shap_value": 0.117389
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 6,
+      "feature": "sensor_190_avg",
+      "feature_short": "sensor 190",
+      "shap_value": 0.113185
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 7,
+      "feature": "sensor_186_avg_roll_mean_24h",
+      "feature_short": "sensor 186_roll_mean_24h",
+      "shap_value": 0.096819
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 8,
+      "feature": "sensor_187_avg_roll_mean_6h",
+      "feature_short": "sensor 187_roll_mean_6h",
+      "shap_value": 0.081901
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 9,
+      "feature": "sensor_194_avg_zscore",
+      "feature_short": "sensor 194_zscore",
+      "shap_value": 0.07991
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "GradientBoosting",
+      "rank": 10,
+      "feature": "sensor_195_avg_roll_mean_24h",
+      "feature_short": "sensor 195_roll_mean_24h",
+      "shap_value": 0.078237
+    }
+  ],
+  "care_ensemble": [
+    {
+      "farm": "Wind Farm A",
+      "baseline_care": 0.021,
+      "optimised_care": 0.108,
+      "delta": 0.087,
+      "Coverage": 0.1667,
+      "Accuracy": 1.0,
+      "Reliability": 1.0,
+      "Earliness": 0.6483
+    },
+    {
+      "farm": "Wind Farm B",
+      "baseline_care": 0.036,
+      "optimised_care": 0.1243,
+      "delta": 0.0883,
+      "Coverage": 0.1667,
+      "Accuracy": 0.8571,
+      "Reliability": 0.8889,
+      "Earliness": 0.9787
+    },
+    {
+      "farm": "Wind Farm C",
+      "baseline_care": 0.0882,
+      "optimised_care": 0.1741,
+      "delta": 0.0859,
+      "Coverage": 0.4815,
+      "Accuracy": 0.701,
+      "Reliability": 0.7097,
+      "Earliness": 0.7269
+    }
+  ]
+}

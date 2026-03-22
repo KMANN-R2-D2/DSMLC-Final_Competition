@@ -1,0 +1,244 @@
+{
+  "notebook": "2a",
+  "title": "Thermal: Signal Analysis",
+  "signal_rankings": [
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_40_avg",
+      "sensor_short": "sensor 40",
+      "mean_shift": -2.576,
+      "var_ratio": 1.005,
+      "drift_rate": 3.1513,
+      "combined_score": 0.7550234359372725
+    },
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_39_avg",
+      "sensor_short": "sensor 39",
+      "mean_shift": -1.842,
+      "var_ratio": 1.129,
+      "drift_rate": 3.1076,
+      "combined_score": 0.6918223615273525
+    },
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_15_avg",
+      "sensor_short": "sensor 15",
+      "mean_shift": -0.397,
+      "var_ratio": 0.972,
+      "drift_rate": 7.1192,
+      "combined_score": 0.6498440848633097
+    },
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_16_avg",
+      "sensor_short": "sensor 16",
+      "mean_shift": -0.197,
+      "var_ratio": 0.992,
+      "drift_rate": 6.5864,
+      "combined_score": 0.6044730818424703
+    },
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_17_avg",
+      "sensor_short": "sensor 17",
+      "mean_shift": 0.003,
+      "var_ratio": 0.996,
+      "drift_rate": 6.4103,
+      "combined_score": 0.572215361196205
+    },
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_38_avg",
+      "sensor_short": "sensor 38",
+      "mean_shift": -0.639,
+      "var_ratio": 1.222,
+      "drift_rate": 2.8325,
+      "combined_score": 0.5486422477295836
+    },
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_41_avg",
+      "sensor_short": "sensor 41",
+      "mean_shift": 1.301,
+      "var_ratio": 0.927,
+      "drift_rate": 1.9026,
+      "combined_score": 0.5102960611568714
+    },
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_14_avg",
+      "sensor_short": "sensor 14",
+      "mean_shift": 0.502,
+      "var_ratio": 1.034,
+      "drift_rate": 3.4261,
+      "combined_score": 0.5074258382457889
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_19_avg",
+      "sensor_short": "sensor 19",
+      "mean_shift": 3.132,
+      "var_ratio": 0.98,
+      "drift_rate": 172.7321,
+      "combined_score": 0.9711090396824692
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_21_avg",
+      "sensor_short": "sensor 21",
+      "mean_shift": -2.634,
+      "var_ratio": 1.026,
+      "drift_rate": 31.7071,
+      "combined_score": 0.6602520117595138
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_32_avg",
+      "sensor_short": "sensor 32",
+      "mean_shift": 0.2,
+      "var_ratio": 1.073,
+      "drift_rate": 4.0413,
+      "combined_score": 0.36241776852996294
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_31_avg",
+      "sensor_short": "sensor 31",
+      "mean_shift": -0.184,
+      "var_ratio": 1.024,
+      "drift_rate": 0.572,
+      "combined_score": 0.33879784435222016
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_33_avg",
+      "sensor_short": "sensor 33",
+      "mean_shift": 0.026,
+      "var_ratio": 1.034,
+      "drift_rate": 4.3686,
+      "combined_score": 0.3324153001159433
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_8_avg",
+      "sensor_short": "sensor 8",
+      "mean_shift": 0.071,
+      "var_ratio": 0.975,
+      "drift_rate": 0.6402,
+      "combined_score": 0.3116809418464736
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_177_avg",
+      "sensor_short": "sensor 177",
+      "mean_shift": 24.375,
+      "var_ratio": 631.014,
+      "drift_rate": 2.9797,
+      "combined_score": 0.7286623806073561
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_200_avg",
+      "sensor_short": "sensor 200",
+      "mean_shift": 2.603,
+      "var_ratio": 1.108,
+      "drift_rate": 16.021,
+      "combined_score": 0.36951521583746455
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_199_avg",
+      "sensor_short": "sensor 199",
+      "mean_shift": 0.452,
+      "var_ratio": 1.029,
+      "drift_rate": 3.2999,
+      "combined_score": 0.07538256943279371
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_201_avg",
+      "sensor_short": "sensor 201",
+      "mean_shift": 0.452,
+      "var_ratio": 1.023,
+      "drift_rate": 3.2936,
+      "combined_score": 0.07524832197083862
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_202_avg",
+      "sensor_short": "sensor 202",
+      "mean_shift": 0.414,
+      "var_ratio": 1.018,
+      "drift_rate": 3.3005,
+      "combined_score": 0.07486958417513677
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_191_avg",
+      "sensor_short": "sensor 191",
+      "mean_shift": 0.089,
+      "var_ratio": 1.045,
+      "drift_rate": 0.6827,
+      "combined_score": 0.01597338913484304
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_192_avg",
+      "sensor_short": "sensor 192",
+      "mean_shift": 0.053,
+      "var_ratio": 1.034,
+      "drift_rate": 0.6772,
+      "combined_score": 0.015360837549451044
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_178_avg",
+      "sensor_short": "sensor 178",
+      "mean_shift": 0.021,
+      "var_ratio": 1.019,
+      "drift_rate": 0.4309,
+      "combined_score": 0.009790782895548595
+    }
+  ],
+  "spectral_analysis": [
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_15_avg",
+      "spectral_excess": 5417.890255498088
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_31_avg",
+      "spectral_excess": 0.0
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_191_avg",
+      "spectral_excess": 0.0
+    }
+  ],
+  "correlation_instability": [
+    {
+      "farm": "Wind Farm A",
+      "event_id": 0,
+      "first_alert_step": null,
+      "hours_into_event": null,
+      "max_instability": 0.6482
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 19,
+      "first_alert_step": 1296,
+      "hours_into_event": 216.0,
+      "max_instability": 4.4201
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 11,
+      "first_alert_step": 1368,
+      "hours_into_event": 228.0,
+      "max_instability": 8.9619
+    }
+  ]
+}
