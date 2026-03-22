@@ -536,20 +536,52 @@ function buildMonitoringCharts(){
 }
 
 // ==================== THRESHOLD SIMULATOR ====================
+// Custom vertical line plugin for simulator
+const verticalLinePlugin = {
+  id: 'verticalLine',
+  afterDraw(chart) {
+    if (chart.config.options._vLineX === undefined) return;
+    const {ctx, chartArea, scales} = chart;
+    const xScale = scales.x;
+    const x = chart.config.options._vLineX;
+    const xPx = xScale.getPixelForValue(x);
+    if (xPx < chartArea.left || xPx > chartArea.right) return;
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(xPx, chartArea.top);
+    ctx.lineTo(xPx, chartArea.bottom);
+    ctx.strokeStyle = 'rgba(255,255,255,0.55)';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([5, 3]);
+    ctx.stroke();
+    ctx.restore();
+  }
+};
+Chart.register(verticalLinePlugin);
+
 function initSim(){
   const ctx=document.getElementById('chart-sim');
   if(!ctx)return;
   const curve=D.nb2c.care_optimised_curves['Wind Farm A'];
   simChart=new Chart(ctx,{type:'line',data:{
-    labels:curve.map(p=>p.thr.toFixed(3)),
+    labels:curve.map(p=>p.thr),
     datasets:[
-      {label:'CARE',data:curve.map(p=>p.CARE),borderColor:'#7fff6b',borderWidth:2.5,pointRadius:0,fill:false,tension:0.4},
-      {label:'Coverage',data:curve.map(p=>p.Coverage),borderColor:'#00e5ff',borderWidth:1.5,pointRadius:0,fill:false,tension:0.4,borderDash:[4,2]},
-      {label:'Reliability',data:curve.map(p=>p.Reliability),borderColor:'#ff6b35',borderWidth:1.5,pointRadius:0,fill:false,tension:0.4,borderDash:[4,2]},
-      {label:'Earliness',data:curve.map(p=>p.Earliness),borderColor:'#ffaa00',borderWidth:1.5,pointRadius:0,fill:false,tension:0.4,borderDash:[4,2]},
-      {label:'Threshold',data:curve.map((_,i)=>null),borderColor:'rgba(255,255,255,0.3)',borderWidth:1,pointRadius:0,fill:false,type:'line'},
+      {label:'CARE',      data:curve.map(p=>({x:p.thr,y:p.CARE})),      borderColor:'#7fff6b',borderWidth:2.5,pointRadius:0,fill:false,tension:0.4},
+      {label:'Coverage',  data:curve.map(p=>({x:p.thr,y:p.Coverage})),  borderColor:'#00e5ff',borderWidth:1.5,pointRadius:0,fill:false,tension:0.4,borderDash:[4,2]},
+      {label:'Reliability',data:curve.map(p=>({x:p.thr,y:p.Reliability})),borderColor:'#ff6b35',borderWidth:1.5,pointRadius:0,fill:false,tension:0.4,borderDash:[4,2]},
+      {label:'Earliness', data:curve.map(p=>({x:p.thr,y:p.Earliness})), borderColor:'#ffaa00',borderWidth:1.5,pointRadius:0,fill:false,tension:0.4,borderDash:[4,2]},
     ]
-  },options:{...CHART_DEFAULTS,plugins:{...CHART_DEFAULTS.plugins,legend:{labels:{color:'#9ca3af',font:{family:"'Space Mono',monospace",size:9}}}},scales:{x:{...CHART_DEFAULTS.scales.x,title:{display:true,text:'Threshold',color:'#6b7280'}},y:{...CHART_DEFAULTS.scales.y,min:0,max:1.05}},animation:{duration:200}}});
+  },options:{
+    ...CHART_DEFAULTS,
+    parsing: false,
+    plugins:{...CHART_DEFAULTS.plugins,legend:{labels:{color:'#9ca3af',font:{family:"'Space Mono',monospace",size:9}}}},
+    scales:{
+      x:{...CHART_DEFAULTS.scales.x,type:'linear',title:{display:true,text:'Threshold',color:'#6b7280'},ticks:{...CHART_DEFAULTS.scales.x.ticks,callback:v=>v.toFixed(3)}},
+      y:{...CHART_DEFAULTS.scales.y,min:0,max:1.05}
+    },
+    animation:{duration:150},
+    _vLineX: curve[4].thr
+  }});
   updateSim();
 }
 
@@ -559,11 +591,10 @@ function simFarm(farm,btn){
   btn.classList.add('active');
   const curve=D.nb2c.care_optimised_curves[farm];
   if(!simChart||!curve)return;
-  simChart.data.labels=curve.map(p=>p.thr.toFixed(3));
-  simChart.data.datasets[0].data=curve.map(p=>p.CARE);
-  simChart.data.datasets[1].data=curve.map(p=>p.Coverage);
-  simChart.data.datasets[2].data=curve.map(p=>p.Reliability);
-  simChart.data.datasets[3].data=curve.map(p=>p.Earliness);
+  simChart.data.datasets[0].data=curve.map(p=>({x:p.thr,y:p.CARE}));
+  simChart.data.datasets[1].data=curve.map(p=>({x:p.thr,y:p.Coverage}));
+  simChart.data.datasets[2].data=curve.map(p=>({x:p.thr,y:p.Reliability}));
+  simChart.data.datasets[3].data=curve.map(p=>({x:p.thr,y:p.Earliness}));
   simChart.update();
   updateSim();
 }
@@ -581,9 +612,9 @@ function updateSim(){
   document.getElementById('sim-ear').textContent=pct(pt.Earliness);
   document.getElementById('sim-care').textContent=pt.CARE.toFixed(4);
   document.getElementById('sim-care').style.color=cc(pt.CARE);
-  // Vertical line on chart
+  // Move vertical line via plugin
   if(simChart){
-    simChart.data.datasets[4].data=curve.map((_,i)=>i===idx?1.05:null);
+    simChart.config.options._vLineX = pt.thr;
     simChart.update('none');
   }
 }
