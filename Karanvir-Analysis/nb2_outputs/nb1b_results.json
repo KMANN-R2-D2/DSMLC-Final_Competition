@@ -1,0 +1,565 @@
+{
+  "notebook": "1b",
+  "title": "Gearbox: Cross-Turbine Thresholds & BOCPD",
+  "turbine_baselines": [
+    {
+      "farm": "Wind Farm A",
+      "event_id": 72,
+      "asset_id": "21",
+      "base_mean": 41.85,
+      "base_std": 2.36,
+      "alert_at_23sigma": 47.28
+    },
+    {
+      "farm": "Wind Farm A",
+      "event_id": 0,
+      "asset_id": "0",
+      "base_mean": 46.87,
+      "base_std": 2.1,
+      "alert_at_23sigma": 51.7
+    },
+    {
+      "farm": "Wind Farm A",
+      "event_id": 40,
+      "asset_id": "10",
+      "base_mean": 48.58,
+      "base_std": 4.2,
+      "alert_at_23sigma": 58.24
+    },
+    {
+      "farm": "Wind Farm A",
+      "event_id": 42,
+      "asset_id": "10",
+      "base_mean": 42.55,
+      "base_std": 2.62,
+      "alert_at_23sigma": 48.58
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 34,
+      "asset_id": "14",
+      "base_mean": 47.78,
+      "base_std": 1.86,
+      "alert_at_23sigma": 52.06
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 7,
+      "asset_id": "13",
+      "base_mean": 50.1,
+      "base_std": 0.66,
+      "alert_at_23sigma": 51.62
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 53,
+      "asset_id": "6",
+      "base_mean": 46.81,
+      "base_std": 1.61,
+      "alert_at_23sigma": 50.51
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 27,
+      "asset_id": "7",
+      "base_mean": 48.98,
+      "base_std": 1.23,
+      "alert_at_23sigma": 51.81
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 19,
+      "asset_id": "11",
+      "base_mean": 49.69,
+      "base_std": 1.47,
+      "alert_at_23sigma": 53.07
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 77,
+      "asset_id": "12",
+      "base_mean": 46.07,
+      "base_std": 7.49,
+      "alert_at_23sigma": 63.3
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 55,
+      "asset_id": "50",
+      "base_mean": 53.01,
+      "base_std": 2.31,
+      "alert_at_23sigma": 58.32
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 81,
+      "asset_id": "38",
+      "base_mean": 49.56,
+      "base_std": 1.61,
+      "alert_at_23sigma": 53.26
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 47,
+      "asset_id": "21",
+      "base_mean": 53.09,
+      "base_std": 0.88,
+      "alert_at_23sigma": 55.11
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 12,
+      "asset_id": "2",
+      "base_mean": 48.14,
+      "base_std": 2.11,
+      "alert_at_23sigma": 52.99
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 4,
+      "asset_id": "34",
+      "base_mean": 49.73,
+      "base_std": 1.61,
+      "alert_at_23sigma": 53.43
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 18,
+      "asset_id": "34",
+      "base_mean": 48.37,
+      "base_std": 3.42,
+      "alert_at_23sigma": 56.24
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 28,
+      "asset_id": "52",
+      "base_mean": 47.28,
+      "base_std": 1.7,
+      "alert_at_23sigma": 51.19
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 39,
+      "asset_id": "52",
+      "base_mean": 46.01,
+      "base_std": 2.28,
+      "alert_at_23sigma": 51.25
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 66,
+      "asset_id": "12",
+      "base_mean": 48.31,
+      "base_std": 4.54,
+      "alert_at_23sigma": 58.75
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 15,
+      "asset_id": "12",
+      "base_mean": 50.97,
+      "base_std": 1.0,
+      "alert_at_23sigma": 53.27
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 78,
+      "asset_id": "15",
+      "base_mean": 50.34,
+      "base_std": 2.62,
+      "alert_at_23sigma": 56.37
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 79,
+      "asset_id": "16",
+      "base_mean": 50.66,
+      "base_std": 1.21,
+      "alert_at_23sigma": 53.44
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 30,
+      "asset_id": "16",
+      "base_mean": 50.46,
+      "base_std": 1.56,
+      "alert_at_23sigma": 54.05
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 33,
+      "asset_id": "43",
+      "base_mean": 681.36,
+      "base_std": 236.08,
+      "alert_at_23sigma": 1224.34
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 11,
+      "asset_id": "43",
+      "base_mean": 850.0,
+      "base_std": 1.0,
+      "alert_at_23sigma": 852.3
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 44,
+      "asset_id": "44",
+      "base_mean": 49.71,
+      "base_std": 1.7,
+      "alert_at_23sigma": 53.62
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 49,
+      "asset_id": "33",
+      "base_mean": 49.48,
+      "base_std": 1.55,
+      "alert_at_23sigma": 53.04
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 31,
+      "asset_id": "35",
+      "base_mean": 46.58,
+      "base_std": 5.34,
+      "alert_at_23sigma": 58.86
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 67,
+      "asset_id": "35",
+      "base_mean": 50.29,
+      "base_std": 2.08,
+      "alert_at_23sigma": 55.07
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 9,
+      "asset_id": "55",
+      "base_mean": 50.24,
+      "base_std": 0.94,
+      "alert_at_23sigma": 52.4
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 91,
+      "asset_id": "42",
+      "base_mean": 50.85,
+      "base_std": 2.23,
+      "alert_at_23sigma": 55.98
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 5,
+      "asset_id": "32",
+      "base_mean": 52.0,
+      "base_std": 1.55,
+      "alert_at_23sigma": 55.56
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 90,
+      "asset_id": "56",
+      "base_mean": 48.4,
+      "base_std": 1.02,
+      "alert_at_23sigma": 50.75
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 70,
+      "asset_id": "23",
+      "base_mean": 50.53,
+      "base_std": 5.0,
+      "alert_at_23sigma": 62.03
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 35,
+      "asset_id": "53",
+      "base_mean": 48.36,
+      "base_std": 3.79,
+      "alert_at_23sigma": 57.08
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 16,
+      "asset_id": "53",
+      "base_mean": 49.83,
+      "base_std": 2.49,
+      "alert_at_23sigma": 55.56
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 76,
+      "asset_id": "53",
+      "base_mean": 54.13,
+      "base_std": 0.42,
+      "alert_at_23sigma": 55.1
+    }
+  ],
+  "care_optimised": [
+    {
+      "farm": "Wind Farm A",
+      "baseline_care": 0.0,
+      "optimised_care": 0.0506,
+      "delta": 0.0506,
+      "opt_threshold": 0.5567,
+      "Coverage": 0.1667,
+      "Accuracy": 0.7143,
+      "Reliability": 0.6,
+      "Earliness": 0.7086
+    },
+    {
+      "farm": "Wind Farm B",
+      "baseline_care": 0.0885,
+      "optimised_care": 0.0888,
+      "delta": 0.0003,
+      "opt_threshold": 0.5809,
+      "Coverage": 1.0,
+      "Accuracy": 0.8436,
+      "Reliability": 0.1111,
+      "Earliness": 0.9474
+    },
+    {
+      "farm": "Wind Farm C",
+      "baseline_care": 0.0543,
+      "optimised_care": 0.1822,
+      "delta": 0.1279,
+      "opt_threshold": 0.627,
+      "Coverage": 0.5926,
+      "Accuracy": 0.7013,
+      "Reliability": 0.7097,
+      "Earliness": 0.6179
+    }
+  ],
+  "bocpd": [
+    {
+      "farm": "Wind Farm A",
+      "event_id": 0,
+      "sensor": "sensor_12_avg",
+      "first_cp": null,
+      "earliness": 0.0,
+      "hours_into_event": null
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 19,
+      "sensor": "sensor_38_avg",
+      "first_cp": null,
+      "earliness": 0.0,
+      "hours_into_event": null
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 11,
+      "sensor": "sensor_186_avg",
+      "first_cp": null,
+      "earliness": 0.0,
+      "hours_into_event": null
+    }
+  ],
+  "severity_table": [
+    {
+      "farm": "Wind Farm B",
+      "event_id": 77,
+      "asset_id": "12",
+      "label": "anomaly",
+      "severity_index": 0.9099,
+      "persist_hrs": 38.0,
+      "earliness": 1.0,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 27,
+      "asset_id": "7",
+      "label": "anomaly",
+      "severity_index": 0.876,
+      "persist_hrs": 115.5,
+      "earliness": 0.92,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 66,
+      "asset_id": "12",
+      "label": "anomaly",
+      "severity_index": 0.8351,
+      "persist_hrs": 22.2,
+      "earliness": 0.8345,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 31,
+      "asset_id": "35",
+      "label": "anomaly",
+      "severity_index": 0.8141,
+      "persist_hrs": 33.7,
+      "earliness": 0.7136,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 28,
+      "asset_id": "52",
+      "label": "anomaly",
+      "severity_index": 0.8014,
+      "persist_hrs": 12.0,
+      "earliness": 1.0,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 11,
+      "asset_id": "43",
+      "label": "anomaly",
+      "severity_index": 0.7667,
+      "persist_hrs": 8.0,
+      "earliness": 1.0,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm A",
+      "event_id": 40,
+      "asset_id": "10",
+      "label": "anomaly",
+      "severity_index": 0.7542,
+      "persist_hrs": 17.0,
+      "earliness": 0.7086,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 36,
+      "asset_id": "2",
+      "label": "normal",
+      "severity_index": 0.7522,
+      "persist_hrs": 6.5,
+      "earliness": 0.9934,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 70,
+      "asset_id": "23",
+      "label": "anomaly",
+      "severity_index": 0.749,
+      "persist_hrs": 5.0,
+      "earliness": 1.0,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 53,
+      "asset_id": "6",
+      "label": "anomaly",
+      "severity_index": 0.7488,
+      "persist_hrs": 4.3,
+      "earliness": 0.9869,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 35,
+      "asset_id": "53",
+      "label": "anomaly",
+      "severity_index": 0.7347,
+      "persist_hrs": 4.2,
+      "earliness": 1.0,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 37,
+      "asset_id": "23",
+      "label": "normal",
+      "severity_index": 0.7301,
+      "persist_hrs": 8.8,
+      "earliness": 0.855,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 83,
+      "asset_id": "2",
+      "label": "normal",
+      "severity_index": 0.7232,
+      "persist_hrs": 4.5,
+      "earliness": 0.9523,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 67,
+      "asset_id": "35",
+      "label": "anomaly",
+      "severity_index": 0.7127,
+      "persist_hrs": 0.2,
+      "earliness": 0.9987,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 34,
+      "asset_id": "14",
+      "label": "anomaly",
+      "severity_index": 0.7058,
+      "persist_hrs": 0.2,
+      "earliness": 0.9935,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 16,
+      "asset_id": "53",
+      "label": "anomaly",
+      "severity_index": 0.7051,
+      "persist_hrs": 8.7,
+      "earliness": 0.719,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 86,
+      "asset_id": "12",
+      "label": "normal",
+      "severity_index": 0.7007,
+      "persist_hrs": 0.3,
+      "earliness": 0.9932,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 7,
+      "asset_id": "13",
+      "label": "anomaly",
+      "severity_index": 0.6921,
+      "persist_hrs": 0.2,
+      "earliness": 0.9689,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm B",
+      "event_id": 2,
+      "asset_id": "13",
+      "label": "normal",
+      "severity_index": 0.6826,
+      "persist_hrs": 0.3,
+      "earliness": 0.9327,
+      "risk_tier": "CRITICAL"
+    },
+    {
+      "farm": "Wind Farm C",
+      "event_id": 30,
+      "asset_id": "16",
+      "label": "anomaly",
+      "severity_index": 0.656,
+      "persist_hrs": 6.3,
+      "earliness": 0.6589,
+      "risk_tier": "CRITICAL"
+    }
+  ]
+}

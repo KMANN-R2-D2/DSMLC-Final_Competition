@@ -1,0 +1,38 @@
+{
+  "notebook": "2b",
+  "title": "Thermal: Autoencoder Reconstructions",
+  "care_scores": [
+    {
+      "farm": "Wind Farm A",
+      "ae_care": 0.0,
+      "vae_care": 0.0
+    },
+    {
+      "farm": "Wind Farm B",
+      "ae_care": 0.1369,
+      "vae_care": 0.1369
+    },
+    {
+      "farm": "Wind Farm C",
+      "ae_care": 0.3194,
+      "vae_care": 0.3194
+    }
+  ],
+  "ae_summary": {
+    "Wind Farm A": {
+      "threshold": 0.06950099766254425,
+      "mean_normal": 0.02916540950536728,
+      "mean_anomaly": 0.04107929766178131
+    },
+    "Wind Farm B": {
+      "threshold": 0.20836548507213593,
+      "mean_normal": 0.08245434612035751,
+      "mean_anomaly": 0.0900784358382225
+    },
+    "Wind Farm C": {
+      "threshold": 3.593611717224121,
+      "mean_normal": 0.6362366676330566,
+      "mean_anomaly": 0.19418923556804657
+    }
+  }
+}

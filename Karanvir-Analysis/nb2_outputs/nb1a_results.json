@@ -1,0 +1,133 @@
+{
+  "notebook": "1a",
+  "title": "Gearbox: Sensor Patterns & Early Detection",
+  "care_scores": [
+    {
+      "farm": "Wind Farm A",
+      "model": "Isolation Forest",
+      "CARE": 0.0,
+      "Coverage": 0.8333,
+      "Accuracy": 0.4334,
+      "Reliability": 0.0,
+      "Earliness": 0.6999
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "Hotelling T\u00b2",
+      "CARE": 0.0,
+      "Coverage": 1.0,
+      "Accuracy": 0.9246,
+      "Reliability": 0.0,
+      "Earliness": 0.8711
+    },
+    {
+      "farm": "Wind Farm A",
+      "model": "Autoencoder",
+      "CARE": 0.0,
+      "Coverage": 0.8333,
+      "Accuracy": 0.5866,
+      "Reliability": 0.0,
+      "Earliness": 0.8969
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "Isolation Forest",
+      "CARE": 0.0819,
+      "Coverage": 1.0,
+      "Accuracy": 0.7781,
+      "Reliability": 0.1111,
+      "Earliness": 0.9474
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "Hotelling T\u00b2",
+      "CARE": 0.0764,
+      "Coverage": 1.0,
+      "Accuracy": 0.7063,
+      "Reliability": 0.1111,
+      "Earliness": 0.9738
+    },
+    {
+      "farm": "Wind Farm B",
+      "model": "Autoencoder",
+      "CARE": 0.0,
+      "Coverage": 1.0,
+      "Accuracy": 0.6927,
+      "Reliability": 0.0,
+      "Earliness": 0.9813
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "Isolation Forest",
+      "CARE": 0.0543,
+      "Coverage": 0.963,
+      "Accuracy": 0.5181,
+      "Reliability": 0.1613,
+      "Earliness": 0.6752
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "Hotelling T\u00b2",
+      "CARE": 0.2533,
+      "Coverage": 0.963,
+      "Accuracy": 0.893,
+      "Reliability": 0.4516,
+      "Earliness": 0.6523
+    },
+    {
+      "farm": "Wind Farm C",
+      "model": "Autoencoder",
+      "CARE": 0.0,
+      "Coverage": 1.0,
+      "Accuracy": 0.6791,
+      "Reliability": 0.0,
+      "Earliness": 0.8692
+    }
+  ],
+  "cusum_earliness": [
+    {
+      "farm": "Wind Farm A",
+      "sensor": "sensor_12_avg",
+      "first_alarm_step": 19,
+      "earliness": 0.9340277777777778,
+      "hours_early": 3.2
+    },
+    {
+      "farm": "Wind Farm B",
+      "sensor": "sensor_34_avg",
+      "first_alarm_step": 72,
+      "earliness": 0.964,
+      "hours_early": 12.0
+    },
+    {
+      "farm": "Wind Farm C",
+      "sensor": "sensor_186_avg",
+      "first_alarm_step": 7,
+      "earliness": 0.9965,
+      "hours_early": 1.2
+    }
+  ],
+  "isolation_forest": [
+    {
+      "farm": "Wind Farm A",
+      "threshold": 0.5202,
+      "precision": 0.433,
+      "recall": 0.143,
+      "f1": 0.216
+    },
+    {
+      "farm": "Wind Farm B",
+      "threshold": 0.5777,
+      "precision": 0.778,
+      "recall": 0.029,
+      "f1": 0.056
+    },
+    {
+      "farm": "Wind Farm C",
+      "threshold": 0.5191,
+      "precision": 0.518,
+      "recall": 0.078,
+      "f1": 0.135
+    }
+  ]
+}
